@@ -15,8 +15,9 @@ Käyttäjät: Potilas.
 
 Käyttäjän toiminnot:
 <ul>
-<li>Potilas kirjautuu sisään ohjelmaan.</li>
-Onnistuu jos käyttäjätunnus ja salasana ovat oikein.
+<li>Potilas kirjautuu sisään ohjelmaan.
+<li>Onnistuu jos käyttäjätunnus ja salasana ovat oikein.</li>
+</li>
 <li>Potilas kirjoittaa INR-avustajaan verikokeen päivämäärän ja tuloksen. </li>
 <li>Potilas katsoo ohjelmasta tulevan lääkeannostuksensa ja arvioidun päivämäärän 
 seuraavalle verikokeelle.</li>
