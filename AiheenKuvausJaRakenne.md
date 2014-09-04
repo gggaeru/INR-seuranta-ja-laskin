@@ -22,7 +22,7 @@ Käyttäjän toiminnot:
 <li>Potilas kirjoittaa INR-avustajaan verikokeen päivämäärän ja tuloksen. </li>
 <li>Potilas katsoo ohjelmasta tulevan lääkeannostuksensa ja arvioidun päivämäärän 
 seuraavalle verikokeelle.</li>
-<li>Potilas klikkaa ohjelmassa olevaa linkkiä, joka ohjaa selaimen kautta laboratorion ajanvaraukseen</li>
+<li>Potilas klikkaa ohjelmassa olevaa linkkiä, joka ohjaa selaimen kautta laboratorion ajanvaraukseen.</li>
 <li>Potilas tarkastelee vanhoja verikoetuloksiaan ja lääkemääriään.</li>
 <li>Potilas kirjautuu ulos järjestelmästä.</li>
 </ul>
