@@ -17,8 +17,7 @@ Käyttäjän toiminnot:
 <li>Potilas kirjautuu sisään ohjelmaan.
 <ul>
 <li>Onnistuu jos käyttäjätunnus ja salasana ovat oikein.</li>
-</ul>
-</li>
+</ul></li>
 <li>Potilas kirjoittaa INR-avustajaan verikokeen päivämäärän ja tuloksen. </li>
 <li>Potilas katsoo ohjelmasta tulevan lääkeannostuksensa ja arvioidun päivämäärän 
 seuraavalle verikokeelle.</li>
