@@ -14,10 +14,16 @@ ja antaa linkin laboratorion ajanvaraussivuille.
 Käyttäjät: Potilas. 
 
 Käyttäjän toiminnot:
+
 Potilas kirjautuu sisään ohjelmaan.
+
 Onnistuu jos käyttäjätunnus ja salasana ovat oikein.
+
 Potilas kirjoittaa INR-avustajaan verikokeen päivämäärän ja tuloksen. 
+
 Potilas katsoo ohjelmasta tulevan lääkeannostuksensa ja arvioidun päivämäärän 
 seuraavalle verikokeelle.
+
 Potilas tarkastelee vanhoja verikoetuloksiaan ja lääkemääriään.
+
 Potilas kirjautuu ulos järjestelmästä.
