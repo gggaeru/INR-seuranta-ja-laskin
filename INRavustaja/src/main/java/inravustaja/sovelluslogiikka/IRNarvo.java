@@ -12,6 +12,12 @@ package inravustaja.sovelluslogiikka;
  */
 public class IRNarvo {
     
+    private int Inrarvo;
+    
+    public int INRarvo(int inr){      
+        this.Inrarvo = inr;
+        return this.Inrarvo;
+    }
     
     
 }
