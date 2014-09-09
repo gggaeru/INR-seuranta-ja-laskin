@@ -12,4 +12,6 @@ package inravustaja.sovelluslogiikka;
  */
 public class Annoslaskin {
     
+    
+    
 }
