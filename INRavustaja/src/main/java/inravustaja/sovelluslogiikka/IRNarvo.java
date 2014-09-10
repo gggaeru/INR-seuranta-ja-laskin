@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package inravustaja.sovelluslogiikka;
 
 /**
@@ -11,13 +10,17 @@ package inravustaja.sovelluslogiikka;
  * @author onnikone
  */
 public class IRNarvo {
-    
-    private int Inrarvo;
-    
-    public int INRarvo(int inr){      
+
+    private double Inrarvo;
+
+
+    public void INRarvo(double inr) {
         this.Inrarvo = inr;
+
+    }
+
+    public double getINRarvo() {
         return this.Inrarvo;
     }
-    
-    
+
 }
