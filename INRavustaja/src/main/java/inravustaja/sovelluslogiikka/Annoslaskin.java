@@ -12,6 +12,21 @@ package inravustaja.sovelluslogiikka;
  */
 public class Annoslaskin {
     
+    private int aiempimaara;
+    private int arvo;
     
+    public Annoslaskin(){
+        this.aiempimaara= 2; /* tähän haetaan arvo seurannasta  */   
+        this.arvo = 23;
+    }
+    
+    public int laskin(){
+     int uusimaara = 0;
+     
+     
+        
+    return uusimaara;
+    
+    }
     
 }

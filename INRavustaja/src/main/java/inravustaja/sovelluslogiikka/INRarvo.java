@@ -9,18 +9,22 @@ package inravustaja.sovelluslogiikka;
  *
  * @author onnikone
  */
-public class IRNarvo {
+public class INRarvo {
 
-    private double Inrarvo;
+    private int arvo;
 
-
-    public void INRarvo(double inr) {
-        this.Inrarvo = inr;
+    public void INRarvo(int inr) {
+        this.arvo = inr;
 
     }
 
-    public double getINRarvo() {
-        return this.Inrarvo;
+    /**
+     *
+     * @return
+     */
+    public int getINRarvo() {
+        return this.arvo;
+
     }
 
 }

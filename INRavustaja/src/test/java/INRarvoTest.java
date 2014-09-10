@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 
-import inravustaja.sovelluslogiikka.IRNarvo;
+
+
+import inravustaja.sovelluslogiikka.INRarvo;
 import org.junit.After;
 import org.junit.AfterClass;
 import static org.junit.Assert.*;
@@ -16,17 +18,18 @@ import org.junit.Test;
  *
  * @author onnikone
  */
-public class IRNarvoTest {
+public class INRarvoTest {
     
-    private double luku;
+    private static INRarvo uusiarvo;
+    
+    private int luku;
 
-    public IRNarvoTest() {
-     this.luku=2.3;
+    public INRarvoTest() {
+     this.luku=23;
     }
 
     @BeforeClass
-    public static void setUpClass() {   
-
+    public static void setUpClass() {  
     }
 
     @AfterClass
@@ -36,6 +39,6 @@ public class IRNarvoTest {
     @Test
     public void getINRarvoTest() {
             
-     new IRNarvo();
+    
     }
 }

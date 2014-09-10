@@ -12,15 +12,10 @@ import java.util.HashMap;
  * @author onnikone
  */
 public class Seuranta {
-
-  
+    
 
     public Seuranta() {
        
-    }
-
-    public void lisaaTunnus(String nimi, String salasana) {
-    
     }
 
 }
