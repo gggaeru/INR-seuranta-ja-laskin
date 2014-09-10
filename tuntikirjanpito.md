@@ -7,3 +7,6 @@ Aloitin kirjoittamaan ohjelman kuvausta.
 suoraan GitHubin sivuille. Kirjoitin deadlineen vaadittavat asiat loppuun ohjelmakuvaukseen.
 
 8.9. :3 tuntia; onnistuin sähläämään SSH-avainten kanssa, ja tuskailin niiden kanssa yli tunnin. Sitten luovutin, ja aloin vain tekemään projektia ilman tietoa siitä, miten saan työnnettyä tuotokset GitHubille. Vaaran tuntua ilmassa. Piirsin määritysvaiheen luokkakaavion ja pohdin mitä paketteja ja luokkia loisin ohjelmalle. Ja sain GitHubinkin toimimaan.
+
+10.9. :2 tuntia; yritin saada testejä toimimaan, hieman laihoin tuloksin. Kirjoitin koodia ja tutkin vanhoja javatehtäviä, muodostin konstruktorit ainakin noin suunnilleen kaikkiin luokkiin. Muutama toiminnallisuus.
+
