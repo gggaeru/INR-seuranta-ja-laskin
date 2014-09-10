@@ -38,4 +38,7 @@ public class PVMlaskin {
         return "Ota yhteyttä lääkäriin";
     }
 
+    public String toString(){
+        return this.paiva+"."+this.kk+"."+this.vuosi;
+    }
 }
