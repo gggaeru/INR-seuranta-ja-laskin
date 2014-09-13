@@ -12,10 +12,9 @@ import java.util.HashMap;
  * @author onnikone
  */
 public class Seuranta {
-    
-
-    public Seuranta() {
-       
+   
+    public Seuranta(){
+        
     }
 
 }

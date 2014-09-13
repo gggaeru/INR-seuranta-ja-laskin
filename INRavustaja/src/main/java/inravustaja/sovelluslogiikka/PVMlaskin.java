@@ -11,34 +11,26 @@ package inravustaja.sovelluslogiikka;
  */
 public class PVMlaskin {
 
-    private int vuosi;
-    private int kk;
-    private int paiva;
+    private double inrarvo;
 
-    public PVMlaskin(int paiva, int kk, int vuosi) {
-        this.vuosi = vuosi;
-        this.kk = kk;
-        this.paiva = paiva;
+    public PVMlaskin(double inr) {
+        this.inrarvo = inr;
     }
 
     public String uusipaivamaara() {
 
-        int inrarvo = 23; 
-        /** tähän arvo haetaan INRarvosta. En saa sitä vielä 
-         * toimimaan :( 
-         */
-        
-        if (inrarvo > 30 && inrarvo < 32 || inrarvo < 20 && inrarvo > 27) {
-            return "Uusi aika varataan viikon sisään";
-        } else if (inrarvo == 20 || inrarvo == 30) {
-            return "Uusi aika varataan kahden viikon päähän";
-        } else if (inrarvo < 30 && inrarvo > 20) {
-            return "uusi aika varataan kuukauden päähän";
+        if (inrarvo > 3.0 && inrarvo < 3.2 || inrarvo < 2.0 && inrarvo > 2.7) {
+            return "Varaa uusi aika laboratorioon viikon sisään.";
+        } else if (inrarvo == 2.0 || inrarvo == 3.0) {
+            return "Varaa uusi aika laboratorioon noin kahden viikon päähän.";
+        } else if (inrarvo < 3.0 && inrarvo > 2.0) {
+            return "Käy laboratoriossa seuraavan kerran noin kuukauden kuluttua.";
         }
-        return "Ota yhteyttä lääkäriin";
+        return "Ota yhteyttä lääkäriin uuden annostuksen ja näytteenottopäivän saamiseksi.";
     }
 
-    public String toString(){
-        return this.paiva+"."+this.kk+"."+this.vuosi;
+    public String toString() {
+        return uusipaivamaara();
+
     }
 }

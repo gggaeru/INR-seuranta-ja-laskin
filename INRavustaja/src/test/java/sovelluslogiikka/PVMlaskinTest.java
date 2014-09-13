@@ -25,8 +25,6 @@ public class PVMlaskinTest {
 
     @Test
     public void asettaakoKonstruktorinOikein() {
-        PVMlaskin ekapaiva= new PVMlaskin(1, 5, 2014);  
-        String paiva=ekapaiva.toString();
-        assertEquals(paiva, "1.5.2014" );
+       
 }
     }

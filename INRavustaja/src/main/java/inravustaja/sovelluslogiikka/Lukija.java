@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package inravustaja.sovelluslogiikka;
 
 import java.util.Scanner;
@@ -13,26 +12,21 @@ import java.util.Scanner;
  * @author onnikone
  */
 public class Lukija {
-    
-      private Scanner lukija;
- 
-     
-    public Lukija(){
-         this.lukija = new Scanner(System.in);
+
+    private Scanner lukija;
+
+    public Lukija() {       
+        this.lukija = new Scanner(System.in);
     }
-     
-     
-    public String lueMerkkijono(){
+
+    public String lueMerkkijono() {       
         String merkit = lukija.nextLine();
-         
         return merkit;
     }
-     
-    public int lueKokonaisluku(){
-         
-        int kokonaisluku = kokonaisluku = Integer.parseInt(lukija.nextLine());
+
+    public double lueLiukuluku() {
+        double kokonaisluku = Double.parseDouble(lukija.nextLine());
         return kokonaisluku;
     }
 
-    
 }
