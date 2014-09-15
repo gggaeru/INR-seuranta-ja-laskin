@@ -6,12 +6,14 @@ package sovelluslogiikka;
  * and open the template in the editor.
  */
 
+import inravustaja.sovelluslogiikka.Annoslaskin;
 import org.junit.After;
 import org.junit.AfterClass;
+import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
 
 /**
  *
@@ -19,28 +21,18 @@ import static org.junit.Assert.*;
  */
 public class AnnoslaskinTest {
     
-    public AnnoslaskinTest() {
-    }
+    Annoslaskin laskin;
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
+    public AnnoslaskinTest() {       
     }
     
     @Before
-    public void setUp() {
+    public void setUp()  {
+     laskin = new Annoslaskin(2.0, 12.0);      
     }
     
-    @After
-    public void tearDown() {
+    @Test
+    public void toimiikoKonstruktoriOikein(){
+      
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
 }

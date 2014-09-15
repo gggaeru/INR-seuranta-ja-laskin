@@ -5,11 +5,7 @@
  */
 package inravustaja.kayttoliittyma;
 
-import inravustaja.sovelluslogiikka.Annoslaskin;
-import inravustaja.sovelluslogiikka.InrArvo;
-import inravustaja.sovelluslogiikka.Lukija;
-import inravustaja.sovelluslogiikka.PVMlaskin;
-import inravustaja.sovelluslogiikka.Tabletit;
+import inravustaja.sovelluslogiikka.*;
 
 /**
  *

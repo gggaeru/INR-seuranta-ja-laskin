@@ -7,11 +7,9 @@ package sovelluslogiikka;
  */
 
 import inravustaja.sovelluslogiikka.PVMlaskin;
-import org.junit.After;
-import org.junit.AfterClass;
 import static org.junit.Assert.*;
-import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -19,12 +17,51 @@ import org.junit.Test;
  * @author onnikone
  */
 public class PVMlaskinTest {
+    
+    PVMlaskin laskin;
 
     public PVMlaskinTest() {
     }
+    
+      @Before
+    public void setUp()  {
+        
+    }   
 
     @Test
     public void asettaakoKonstruktorinOikein() {
-       
-}
+        
+        
+    }
+    
+    @Test
+    public void inrOnTasanKaksi(){
+        
+    }
+    
+    @Test
+    public void inrOnVahanAlleKaksi(){
+        
+    }
+    
+    @Test
+    public void inrOnPaljonAlleKaksi(){
+        
+    }
+    
+    @Test
+    public void inrOnTasanKolme(){
+        
+    }
+    
+    @Test
+    public void inrOnVahanYliKolme(){
+        
+    }
+    
+    @Test
+    public void inrOnPaljonAlleKolme(){
+        
+    } 
+    
     }
