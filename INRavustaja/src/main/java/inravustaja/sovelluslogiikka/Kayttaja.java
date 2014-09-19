@@ -14,13 +14,26 @@ package inravustaja.sovelluslogiikka;
 public class Kayttaja {
     private String kayttaja;
     private String salasana;
-    
+    private Lukija lukija;
     
     
     public Kayttaja(String kayttaja, String salasana){
         this.kayttaja=kayttaja;
         this.salasana=salasana;
 
+    }
+    
+    public void kaynnisty(){
+        System.out.println("Hei " + this.kayttaja + "!");
+        System.out.println("Anna salasanasi:");
+        String yritys = lukija.lueMerkkijono();
+        while(true){
+        if(yritys.equals(this.salasana)){
+            break;
+        }
+            System.out.println("Antamasi salasana oli väärin, yritä uudelleen:");
+            yritys = lukija.lueMerkkijono();
+            }
     }
     
 

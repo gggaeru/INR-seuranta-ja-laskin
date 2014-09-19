@@ -5,6 +5,10 @@
  */
 package inravustaja.sovelluslogiikka;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import static jdk.nashorn.internal.objects.NativeMath.round;
+
 /**
  *
  * @author onnikone
@@ -14,38 +18,54 @@ public class Annoslaskin {
     private double tabletit;
     private double inr;
     private double uusiviikko;
+    String muotoiltu;
+
 
     public Annoslaskin(double inr, double tabletit) {
         this.inr = inr;
         this.tabletit = tabletit;
         this.uusiviikko = laskin();
     }
+    
+    public String muunnin(double d){
+        NumberFormat formatter = new DecimalFormat("#0.0"); 
+        return formatter.format(d);
+    }
+    
 
     public double laskin() {
 
-        if (this.inr > 3.0 && this.inr < 3.4) {
+        if (this.inr > 3.0 && this.inr < 3.3) {
             this.tabletit = this.tabletit * 0.9;
             return this.tabletit;
 
         } else if (this.inr < 2.0 && this.inr > 1.7) {
             this.tabletit = this.tabletit * 1.1;
+            return (double) round(this.tabletit,2);
+
+        } else if (this.inr > 1.9 && this.inr < 3.1) {
             return this.tabletit;
-        } else {
-            return 0;
+
+        } else if (this.inr > 3.2 || this.inr < 1.8) {
+            this.tabletit = 0;
+            return this.tabletit;
         }
+        return 0;
 
     }
 
     public String tablettienJakoViikolle() {
-        if(this.uusiviikko == 0){
+        if (this.uusiviikko == 0) {
             return "INR- arvosi on liian kaukana tavoitearvoista.";
-            
-        }
-          return "" + this.uusiviikko;
-    }
-    
-    public String tablettienJakoPaiville(){
+        }       
+        double uusijako = this.tabletit; 
+        muotoiltu = muunnin(this.tabletit);
         
+        return muotoiltu;
+    }
+
+    public String tablettienJakoPaiville() {
+
         return "";
     }
 

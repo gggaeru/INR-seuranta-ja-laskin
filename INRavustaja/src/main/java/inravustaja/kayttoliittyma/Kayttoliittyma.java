@@ -7,6 +7,7 @@ package inravustaja.kayttoliittyma;
 
 import inravustaja.sovelluslogiikka.*;
 
+
 /**
  *
  * @author onnikone
@@ -15,31 +16,33 @@ public class Kayttoliittyma {
 
     Lukija lukija = new Lukija();
 
-    public Kayttoliittyma(){
-        
-    }
-    
-    public void kaynnista(){
-        
-       
-         System.out.println (
-        "Anna inr-arvosi:");
-         double inr = lukija.lueLiukuluku();
-         String pvm = "";
-         InrArvoJaPvm uusiarvo = new InrArvoJaPvm(inr, pvm);
+    public Kayttoliittyma() {
 
-        System.out.println (
-        "Anna tablettimääräsi:");
-         double maara = lukija.lueLiukuluku();
-         
-         PvmLaskin seuraavaksi = new PvmLaskin(inr);
-         System.out.println(seuraavaksi.toString());
-         Annoslaskin uudetmaarat = new Annoslaskin(inr, maara);
-         System.out.println(uudetmaarat.toString());
-         
-         
-         
-         
+    }
+
+    public void kaynnista()  {
+        
+        Kayttaja uusialku = new Kayttaja("Tatu","porkkana");
+        uusialku.kaynnisty();
+        
+
+        System.out.println("Anna inr-arvosi:");
+        double inr = lukija.lueLiukuluku();  
+        
+        String pvm = "";
+        
+        InrArvoJaPvm uusiarvo = new InrArvoJaPvm(inr, pvm);
+        uusiarvo.lisaaArvoja();
+
+        System.out.println("Anna tablettimääräsi:");
+        double tabl = lukija.lueLiukuluku();
+            
+        Annoslaskin uudetmaarat = new Annoslaskin(inr, tabl);
+        System.out.println(uudetmaarat.toString());
+
+        PvmLaskin seuraavaksi = new PvmLaskin(inr);
+        System.out.println(seuraavaksi.toString());
+
     }
 
 }
