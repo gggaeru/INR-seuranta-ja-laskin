@@ -6,12 +6,13 @@
 
 package sovelluslogiikka;
 
+import inravustaja.sovelluslogiikka.Annoslaskin;
 import org.junit.After;
 import org.junit.AfterClass;
+import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -19,16 +20,14 @@ import static org.junit.Assert.*;
  */
 public class AnnoslaskinTest {
     
+    Annoslaskin annos;
+    
     public AnnoslaskinTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    
-    @Before
-    public void setUp() {
+    @Test
+    public void inrOnAlhainen(){
+        
     }
 
 

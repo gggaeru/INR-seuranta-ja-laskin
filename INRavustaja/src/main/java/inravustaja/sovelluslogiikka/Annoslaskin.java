@@ -13,10 +13,12 @@ public class Annoslaskin {
 
     private double tabletit;
     private double inr;
+    private double uusiviikko;
 
     public Annoslaskin(double inr, double tabletit) {
         this.inr = inr;
         this.tabletit = tabletit;
+        this.uusiviikko = laskin();
     }
 
     public double laskin() {
@@ -35,16 +37,20 @@ public class Annoslaskin {
     }
 
     public String tablettienJakoViikolle() {
-        double uusiviikko = laskin();
-          return "" + uusiviikko;
+        if(this.uusiviikko == 0){
+            return "INR- arvosi on liian kaukana tavoitearvoista.";
+            
+        }
+          return "" + this.uusiviikko;
     }
     
     public String tablettienJakoPaiville(){
+        
         return "";
     }
 
     public String toString() {
-        return "Uusi tablettimääräsi tälle viikolle on : " + paivienJako();
+        return "Uusi tablettimääräsi tälle viikolle on : " + tablettienJakoViikolle();
     }
 
 }

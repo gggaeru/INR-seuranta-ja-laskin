@@ -25,7 +25,7 @@ public class Kayttoliittyma {
          System.out.println (
         "Anna inr-arvosi:");
          double inr = lukija.lueLiukuluku();
-         String pvm = lukija.lueMerkkijono();
+         String pvm = "";
          InrArvoJaPvm uusiarvo = new InrArvoJaPvm(inr, pvm);
 
         System.out.println (
