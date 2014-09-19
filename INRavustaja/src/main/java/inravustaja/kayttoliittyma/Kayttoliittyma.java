@@ -25,13 +25,14 @@ public class Kayttoliittyma {
          System.out.println (
         "Anna inr-arvosi:");
          double inr = lukija.lueLiukuluku();
-         InrArvo uusiarvo = new InrArvo(inr);
+         String pvm = lukija.lueMerkkijono();
+         InrArvoJaPvm uusiarvo = new InrArvoJaPvm(inr, pvm);
 
         System.out.println (
         "Anna tablettimääräsi:");
          double maara = lukija.lueLiukuluku();
          
-         PVMlaskin seuraavaksi = new PVMlaskin(inr);
+         PvmLaskin seuraavaksi = new PvmLaskin(inr);
          System.out.println(seuraavaksi.toString());
          Annoslaskin uudetmaarat = new Annoslaskin(inr, maara);
          System.out.println(uudetmaarat.toString());

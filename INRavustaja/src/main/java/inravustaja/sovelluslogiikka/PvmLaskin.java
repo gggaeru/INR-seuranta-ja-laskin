@@ -9,17 +9,17 @@ package inravustaja.sovelluslogiikka;
  *
  * @author onnikone
  */
-public class PVMlaskin {
+public class PvmLaskin {
 
     private double inrarvo;
 
-    public PVMlaskin(double inr) {
+    public PvmLaskin(double inr) {
         this.inrarvo = inr;
     }
 
     public String uusipaivamaara() {
 
-        if (inrarvo > 3.0 && inrarvo < 3.2 || inrarvo < 2.0 && inrarvo > 2.7) {
+        if (inrarvo > 3.0 && inrarvo < 3.2 || inrarvo < 2.0 && inrarvo > 1.7) {
             return "Varaa uusi aika laboratorioon viikon sisään.";
         } else if (inrarvo == 2.0 || inrarvo == 3.0) {
             return "Varaa uusi aika laboratorioon noin kahden viikon päähän.";

@@ -22,6 +22,8 @@ public class Seuranta {
         for (String rivi : t.lue("src/seuranta.txt")) {
             System.out.println(rivi);
         }
+        
+        
 
     }
 

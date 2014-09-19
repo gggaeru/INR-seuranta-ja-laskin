@@ -10,17 +10,23 @@ package inravustaja.sovelluslogiikka;
  *
  * @author onnikone
  */
-public class InrArvo {
+public class InrArvoJaPvm {
     
     private double inr;
+    private String pvm;
     
     
-    public InrArvo(double inr){
+    public InrArvoJaPvm(double inr, String pvm){
         this.inr = inr;
+        this.pvm = pvm;
     }
     
     public double getInrArvo(){
         return this.inr;
+    }
+    
+    public String getPvm(){
+        return this.pvm;
     }
     
 }
