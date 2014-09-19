@@ -29,8 +29,5 @@ public class InrArvoJaPvm {
         return this.pvm;
     }
     
-    public void lisaaArvoja(){
-        
-    }
     
 }

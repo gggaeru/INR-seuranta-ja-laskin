@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package inravustaja.sovelluslogiikka;
+package inravustaja.inravustaja;
 
 import inravustaja.kayttoliittyma.Kayttoliittyma;
 
@@ -18,12 +18,6 @@ public class Main {
          Kayttoliittyma uusiohjelma = new Kayttoliittyma();
          uusiohjelma.kaynnista();
          
-         
-         
-         
-         
     }
-
-    
-    
+   
 }

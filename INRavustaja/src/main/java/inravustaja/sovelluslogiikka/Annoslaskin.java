@@ -18,13 +18,12 @@ public class Annoslaskin {
     private double tabletit;
     private double inr;
     private double uusiviikko;
-    String muotoiltu;
+    private String muotoiltu;
 
 
     public Annoslaskin(double inr, double tabletit) {
         this.inr = inr;
         this.tabletit = tabletit;
-        this.uusiviikko = laskin();
     }
     
     public String muunnin(double d){
@@ -47,8 +46,7 @@ public class Annoslaskin {
             return this.tabletit;
 
         } else if (this.inr > 3.2 || this.inr < 1.8) {
-            this.tabletit = 0;
-            return this.tabletit;
+            return 0;
         }
         return 0;
 
@@ -58,9 +56,7 @@ public class Annoslaskin {
         if (this.uusiviikko == 0) {
             return "INR- arvosi on liian kaukana tavoitearvoista.";
         }       
-        double uusijako = this.tabletit; 
-        muotoiltu = muunnin(this.tabletit);
-        
+        this.muotoiltu = muunnin(this.tabletit);       
         return muotoiltu;
     }
 

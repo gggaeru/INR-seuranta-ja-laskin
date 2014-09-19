@@ -17,14 +17,11 @@ public class Seuranta {
 
     public Seuranta() throws FileNotFoundException, IOException {
 
-        Tiedostonkasittelija t = new Tiedostonkasittelija();
+        Lukija t = new Lukija();
 
         for (String rivi : t.lue("src/seuranta.txt")) {
             System.out.println(rivi);
-        }
-        
-        
-
+        }       
     }
 
 }

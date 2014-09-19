@@ -24,7 +24,6 @@ public class Kayttoliittyma {
         
         Kayttaja uusialku = new Kayttaja("Tatu","porkkana");
         uusialku.kaynnisty();
-        
 
         System.out.println("Anna inr-arvosi:");
         double inr = lukija.lueLiukuluku();  
@@ -32,7 +31,6 @@ public class Kayttoliittyma {
         String pvm = "";
         
         InrArvoJaPvm uusiarvo = new InrArvoJaPvm(inr, pvm);
-        uusiarvo.lisaaArvoja();
 
         System.out.println("Anna tablettimääräsi:");
         double tabl = lukija.lueLiukuluku();
@@ -42,6 +40,8 @@ public class Kayttoliittyma {
 
         PvmLaskin seuraavaksi = new PvmLaskin(inr);
         System.out.println(seuraavaksi.toString());
+        
+        
 
     }
 
