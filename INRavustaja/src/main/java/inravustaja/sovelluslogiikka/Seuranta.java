@@ -5,6 +5,8 @@
  */
 package inravustaja.sovelluslogiikka;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashMap;
 
 /**
@@ -12,9 +14,15 @@ import java.util.HashMap;
  * @author onnikone
  */
 public class Seuranta {
-   
-    public Seuranta(){
-        
+
+    public Seuranta() throws FileNotFoundException, IOException {
+
+        Tiedostonkasittelija t = new Tiedostonkasittelija();
+
+        for (String rivi : t.lue("src/seuranta.txt")) {
+            System.out.println(rivi);
+        }
+
     }
 
 }
