@@ -20,12 +20,12 @@ public class Lukija {
         this.lukija = new Scanner(System.in);
     }
       
-    public String lueMerkkijono() {       
+    public String lueMerkkijono() throws Exception{       
         String merkit = lukija.nextLine();
         return merkit;
     }
 
-    public double lueLiukuluku() {
+    public double lueLiukuluku() throws Exception {
         double kokonaisluku = Double.parseDouble(lukija.nextLine());
         return kokonaisluku;
     }

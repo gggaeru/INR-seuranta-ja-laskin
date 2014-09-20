@@ -20,7 +20,7 @@ public class Kayttoliittyma {
 
     }
 
-    public void kaynnista()  {
+    public void kaynnista() throws Exception  {
         
         Kayttaja uusialku = new Kayttaja("Tatu","porkkana");
         uusialku.kaynnisty();

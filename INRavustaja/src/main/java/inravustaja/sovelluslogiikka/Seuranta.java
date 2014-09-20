@@ -7,7 +7,10 @@ package inravustaja.sovelluslogiikka;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -15,12 +18,30 @@ import java.util.HashMap;
  */
 public class Seuranta {
 
-    public Seuranta() throws FileNotFoundException, IOException {
+    ArrayList<String> seuranta;
+    Lukija lukija;
+    String inr;
+    String pvm;
 
-        Lukija lukija = new Lukija();
-        
-        lukija.lue("/scr/seuranta1.txt");
-        
-        }       
+    public Seuranta() throws FileNotFoundException, IOException {
+        try{
+        this.seuranta = lukija.lue("/scr/seuranta1.txt");
+        }
+        catch(Exception a){
+            System.out.println("Tiedostoa ei ole olemassa");
+        }
     }
 
+    public String lueEdellisetTiedot() {
+        
+        try{
+        inr = this.seuranta.get(0);
+        } 
+        catch (Exception e) {
+            System.out.println("Tiedostoa ei ole olemassa");
+        }
+        
+        return inr;
+        
+    }
+}
