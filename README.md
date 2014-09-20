@@ -1,3 +1,3 @@
-INR-seuranta-ja-laskin
+INR-seuranta ja laskin
 ======================
-ensimmäinen muokkaus ja toinen
+

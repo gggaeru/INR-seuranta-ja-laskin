@@ -7,7 +7,6 @@ package inravustaja.sovelluslogiikka;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-import static jdk.nashorn.internal.objects.NativeMath.round;
 
 /**
  *
@@ -24,6 +23,7 @@ public class Annoslaskin {
     public Annoslaskin(double inr, double tabletit) {
         this.inr = inr;
         this.tabletit = tabletit;
+        this.uusiviikko=laskin();
     }
     
     public String muunnin(double d){
@@ -40,7 +40,7 @@ public class Annoslaskin {
 
         } else if (this.inr < 2.0 && this.inr > 1.7) {
             this.tabletit = this.tabletit * 1.1;
-            return (double) round(this.tabletit,2);
+            return this.tabletit;
 
         } else if (this.inr > 1.9 && this.inr < 3.1) {
             return this.tabletit;

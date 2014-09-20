@@ -5,7 +5,6 @@ package sovelluslogiikka;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 import inravustaja.sovelluslogiikka.Lukija;
 import java.util.Scanner;
 import org.junit.After;
@@ -28,8 +27,12 @@ public class LukijaTest {
     @BeforeClass
     public static void setUpClass() {
         Lukija lukija = new Lukija();
+
     }
 
-   
+    @Test
+    public void lukeeLiukuLukuja() {
+
+    }
 
 }

@@ -16,7 +16,7 @@ public class Lukija {
     
     private Scanner lukija;
     
-      public void Lukija() {       
+      public Lukija() {       
         this.lukija = new Scanner(System.in);
     }
       
