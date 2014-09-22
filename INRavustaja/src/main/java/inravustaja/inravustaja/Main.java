@@ -13,7 +13,7 @@ import inravustaja.kayttoliittyma.Kayttoliittyma;
  * @author onnikone
  */
 public class Main {
-     public static void main(String[] args) {
+     public static void main(String[] args) throws Exception {
          
          Kayttoliittyma uusiohjelma = new Kayttoliittyma();
          uusiohjelma.kaynnista();
