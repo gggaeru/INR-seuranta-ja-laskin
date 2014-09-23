@@ -24,24 +24,32 @@ public class Seuranta {
     String pvm;
 
     public Seuranta() throws FileNotFoundException, IOException {
-        try{
-        this.seuranta = lukija.lue("/scr/seuranta1.txt");
-        }
-        catch(Exception a){
-            System.out.println("Tiedostoa ei ole olemassa");
-        }
+        this.lukija = new Lukija();
+
     }
 
     public String lueEdellisetTiedot() {
-        
-        try{
-        inr = this.seuranta.get(0);
-        } 
-        catch (Exception e) {
+
+        try {
+            for (String rivi : lukija.lue("src/seuranta1.txt")) {
+                this.pvm = rivi.substring(rivi.length() - 10);
+                this.inr=rivi.substring(rivi.length()-16, rivi.length()-13);
+            }
+        } catch (Exception a) {
             System.out.println("Tiedostoa ei ole olemassa");
         }
         
-        return inr;
+        System.out.println("Edellinen inr-arvosi oli :" +  this.inr + " pvm:"+ this.pvm);
+
+        return "";
+
+    }
+    
+    public void lisaaArvo(){
+        
         
     }
+    
+    
+    
 }

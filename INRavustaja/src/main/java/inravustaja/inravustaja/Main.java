@@ -6,7 +6,8 @@
 
 package inravustaja.inravustaja;
 
-import inravustaja.kayttoliittyma.Kayttoliittyma;
+import inravustaja.kayttoliittyma.GraafinenKayttoliittyma;
+import inravustaja.kayttoliittyma.TesktiKayttoliittyma;
 
 /**
  *
@@ -15,8 +16,11 @@ import inravustaja.kayttoliittyma.Kayttoliittyma;
 public class Main {
      public static void main(String[] args) throws Exception {
          
-         Kayttoliittyma uusiohjelma = new Kayttoliittyma();
+         TesktiKayttoliittyma uusiohjelma = new TesktiKayttoliittyma();
          uusiohjelma.kaynnista();
+         
+         GraafinenKayttoliittyma uusiliittyma = new GraafinenKayttoliittyma();
+         uusiliittyma.kaynnista();
          
     }
    

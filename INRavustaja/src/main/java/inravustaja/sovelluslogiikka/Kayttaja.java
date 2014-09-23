@@ -18,15 +18,23 @@ public class Kayttaja {
     public Kayttaja(String kayttaja, String salasana) {
         this.kayttaja = kayttaja;
         this.salasana = salasana;
+        this.lukija = new Lukija();
     }
 
-    public void kaynnisty() {
-       
+    public String kaynnisty() throws Exception {
+
         System.out.println("Hei " + this.kayttaja + "!");
-       
-        
+        System.out.println("Anna salasana:");
+        String sala1 = lukija.lueMerkkijono();
+        while (true) {
+            if (this.salasana.equals(sala1)) {
+                return "";
+            } else {
+                System.out.println("Salasana oli väärin, yritä uudestaan!");
+                sala1 = lukija.lueMerkkijono();
+            }
         }
-        
+    }
 
     public String getKayttaja() {
         return kayttaja.toString();
