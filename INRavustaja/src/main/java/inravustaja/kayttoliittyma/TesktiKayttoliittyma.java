@@ -29,17 +29,26 @@ public class TesktiKayttoliittyma {
         System.out.println("Tervetuloa!");
 
         System.out.println("Jos haluat laskea tablettimäärän uudella INR-arvolla, paina 1."
-                + " \nJos haluat selata vanhoja arvoja, paina 2.");
+                + " \nJos haluat nähdä edellisen arvosi, paina 2.");
 
         double valinta = lukija.lueLiukuluku();
         
-
+        int i=1;
+        
+        while(i > 0){
         if (valinta == 1) {
             uusiArvo();
+            i=0;
         } else if (valinta == 2) {
             seuranta.lueEdellisetTiedot();
-        }               
-
+            i=0;
+        }       
+        else{
+            System.out.println("Paina 1 tai 2.");
+            valinta = lukija.lueLiukuluku();
+        }
+        }
+        
         System.out.println("Hyvää päivänjatkoa!");
 
     }
@@ -61,10 +70,17 @@ public class TesktiKayttoliittyma {
 
         PvmLaskin seuraavaksi = new PvmLaskin(inr);
         System.out.println(seuraavaksi.toString());
-
-
+        
+        System.out.println("Haluatko tallentaa tietosi järjestelmään? Paina"
+                + " 1 jos haluat tallentaa, paina 2 jos et halua.");
+        
+        double valinta2 = lukija.lueLiukuluku();
+        
+        if(valinta2 == 1){
+            
+        }
+        
     }
-    
     
 
 }
