@@ -28,10 +28,10 @@ public class Seuranta {
 
     }
 
-    public String lueEdellisetTiedot() {
+    public String lueEdellisetTiedot(String mista) {
 
         try {
-            for (String rivi : lukija.lue("src/seuranta1.txt")) {
+            for (String rivi : lukija.lue(mista)) {
                 this.pvm = rivi.substring(rivi.length() - 10);
                 this.inr=rivi.substring(rivi.length()-16, rivi.length()-13);
             }
@@ -45,8 +45,18 @@ public class Seuranta {
 
     }
     
-    public void lisaaArvo(){
+    public void lisaaArvo(String inr, String pvm, String mista){
         
+        this.inr= inr;
+        this.pvm = pvm;
+
+        
+         try {
+           lukija.tallenna(mista, inr +":.."+ pvm);
+            
+        } catch (Exception a) {
+            System.out.println("Tiedostoa ei ole olemassa");
+        }
         
     }
     

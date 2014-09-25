@@ -36,7 +36,6 @@
         <instrumentation>
             <includes>
                 <include>inravustaja.sovelluslogiikka/*.class</include>
-                <include>inravustaja.kayttoliittyma/*.class</include>
             </includes>
         </instrumentation>
     </configuration>
@@ -49,11 +48,9 @@
     <configuration>
         <targetClasses>
             <param>inravustaja.sovelluslogiikka.*</param>
-            <param>inravustaja.kayttoliittyma.*</param>
         </targetClasses>
         <targetTests>
             <param>sovelluslogiikka.*</param>
-            <param>kayttoliittyma.*</param>
         </targetTests>
     </configuration>
 </plugin>

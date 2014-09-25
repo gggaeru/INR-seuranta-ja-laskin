@@ -24,7 +24,8 @@ public class SeurantaTest {
 
     Seuranta seuranta;
 
-    public SeurantaTest() {
+    public SeurantaTest() throws IOException {
+        this.seuranta = new Seuranta();
 
     }
 
@@ -33,8 +34,10 @@ public class SeurantaTest {
     }
 
     @Test
-    public void testaaLukeekoTiedostoa() {
-     
+    public void lisaakoTietoaJaLukeekoTietoa() {
+     this.seuranta.lisaaArvo("3.1", "23.09.2014", "src/testi1.txt");
+     assertEquals(this.seuranta.lueEdellisetTiedot("src/testi1.txt"), 
+             "Edellinen inr-arvosi oli : 3.1 pvm: 23.09.2014");
     }
-
+ 
 }

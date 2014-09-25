@@ -6,6 +6,7 @@ package sovelluslogiikka;
  * and open the template in the editor.
  */
 
+import inravustaja.sovelluslogiikka.Kayttaja;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -19,23 +20,21 @@ import static org.junit.Assert.*;
  */
 public class KayttajaTest {
     
+    Kayttaja kayttaja;
+    
     public KayttajaTest() {
+        
+        this.kayttaja= new Kayttaja("Risto", "kukkakaali");
+    }
+
+    
+    @Test
+    public void virheellinenSalasana(){
+        
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
+    public void oikeaSalasana(){
+        
     }
 
    

@@ -43,6 +43,7 @@ public class Lukija {
     public void tallenna(String tiedosto, String teksti) throws FileNotFoundException, IOException {
         FileWriter kirjoittaja = new FileWriter(tiedosto);
         kirjoittaja.write(teksti);
+        kirjoittaja.write(teksti);
         kirjoittaja.close();
     }
 

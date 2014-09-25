@@ -15,6 +15,7 @@ import java.util.Date;
 public class TesktiKayttoliittyma {
 
     Lukija lukija = new Lukija();
+    Seuranta seuranta;
 
     public TesktiKayttoliittyma() {
 
@@ -23,7 +24,7 @@ public class TesktiKayttoliittyma {
     public void kaynnista() throws Exception {
 
         Kayttaja uusialku = new Kayttaja("Tatu", "porkkana");
-        Seuranta seuranta = new Seuranta();
+        this.seuranta = new Seuranta();
 
         uusialku.kaynnisty();
         System.out.println("Tervetuloa!");
@@ -40,7 +41,7 @@ public class TesktiKayttoliittyma {
             uusiArvo();
             i=0;
         } else if (valinta == 2) {
-            seuranta.lueEdellisetTiedot();
+            seuranta.lueEdellisetTiedot("src/seuranta1.txt");
             i=0;
         }       
         else{
@@ -55,14 +56,15 @@ public class TesktiKayttoliittyma {
 
     public void uusiArvo() throws Exception {
 
+
+        System.out.println("Anna päivämäärä: (DD.MM.YYYY)");
+        String pvm = lukija.lueMerkkijono();
+        
         System.out.println("Anna uusi inr-arvosi:");
         double inr = lukija.lueLiukuluku();
-        Date currentTime = new Date();
-        String pvm = currentTime + "";
-
-        InrArvoJaPvm uusiarvo = new InrArvoJaPvm(inr, pvm);
-
-        System.out.println("Anna tablettimääräsi:");
+        String inrteksti = inr + "";
+        
+        System.out.println("Anna viikon tablettimääräsi:");
         double tabl = lukija.lueLiukuluku();
 
         Annoslaskin uudetmaarat = new Annoslaskin(inr, tabl);
@@ -77,8 +79,10 @@ public class TesktiKayttoliittyma {
         double valinta2 = lukija.lueLiukuluku();
         
         if(valinta2 == 1){
-            
+           seuranta.lisaaArvo(inrteksti, pvm, "src/seuranta1.txt");
+           seuranta.lueEdellisetTiedot("src/seuranta1.txt");
         }
+        
         
     }
     

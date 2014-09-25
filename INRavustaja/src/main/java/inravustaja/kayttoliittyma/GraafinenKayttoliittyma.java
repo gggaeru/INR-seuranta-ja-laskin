@@ -17,12 +17,14 @@ import javax.swing.JTextField;
  */
 public class GraafinenKayttoliittyma {
     
+    Container sisallys;
+    
     public GraafinenKayttoliittyma(){
         
     }
     
     public void kaynnista(){
-                
+        luoKomponentit(sisallys);
         
     }
     
