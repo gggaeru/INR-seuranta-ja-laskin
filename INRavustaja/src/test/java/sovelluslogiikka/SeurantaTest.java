@@ -31,13 +31,19 @@ public class SeurantaTest {
 
     @Before
     public void setUp() {
+        this.seuranta.lisaaArvo("2.5", "24.09.2014", "src/testi1.txt");
     }
 
     @Test
-    public void lisaakoTietoaJaLukeekoTietoa() {
+    public void lisaakoTietoa() {
      this.seuranta.lisaaArvo("3.1", "23.09.2014", "src/testi1.txt");
-     assertEquals(this.seuranta.lueEdellisetTiedot("src/testi1.txt"), 
-             "Edellinen inr-arvosi oli : 3.1 pvm: 23.09.2014");
+     assertEquals("Edellinen inr-arvosi oli :3.1 pvm:23.09.2014", this.seuranta.lueEdellisetTiedot("src/testi1.txt"));
     }
+    
+    @Test
+    public void lukeekoTietoa(){
+        assertEquals("Edellinen inr-arvosi oli :2.5 pvm:24.09.2014", this.seuranta.lueEdellisetTiedot("src/testi1.txt"));
+    }
+    
  
 }

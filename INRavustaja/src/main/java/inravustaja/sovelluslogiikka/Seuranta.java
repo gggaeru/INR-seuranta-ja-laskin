@@ -38,10 +38,10 @@ public class Seuranta {
         } catch (Exception a) {
             System.out.println("Tiedostoa ei ole olemassa");
         }
-        
-        System.out.println("Edellinen inr-arvosi oli :" +  this.inr + " pvm:"+ this.pvm);
+        String palautus = ("Edellinen inr-arvosi oli :" +  this.inr + " pvm:"+ this.pvm);
+       
 
-        return "";
+        return palautus;
 
     }
     
