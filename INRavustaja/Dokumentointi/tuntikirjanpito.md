@@ -16,3 +16,11 @@ suoraan GitHubin sivuille. Kirjoitin deadlineen vaadittavat asiat loppuun ohjelm
 
 20.9. :6 tuntia; vielä oli tämä päivä mahdollista paikata sairastelua.
 
+23.9. :4tuntia; sain viimein seurannan toimimaan
+
+24.9. :3 tuntia; logiikan hiomista, graafisen liittymän aloitusta
+
+29.9. :3 tuntia; piirsin sekvenssikaavioita ja jatkoin graafisen liittymän toteutusta
+
+30.9. :2 tuntia; järjestelyä, graafista liittymää ja git push
+

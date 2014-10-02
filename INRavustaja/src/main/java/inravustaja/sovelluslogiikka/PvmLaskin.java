@@ -8,6 +8,9 @@ package inravustaja.sovelluslogiikka;
 /**
  *
  * @author onnikone
+ * 
+ * tämä luokka laskee arvion seuraavasta päivämäärästä, jolloin verikokeeseen olisi
+ * hyvä mennä
  */
 public class PvmLaskin {
 

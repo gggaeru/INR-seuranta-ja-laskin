@@ -9,6 +9,13 @@ package inravustaja.sovelluslogiikka;
  *
  * @author onnikone
  */
+
+
+   /**
+ *
+ * Käyttäjäluokan tärkein ominaisuus on toimia salasanana, ettei kuka tahansa pääsisi 
+ * katsomaan henkilökohtaisia tietoja pelkästään ohjelman käynnistämisellä
+ */
 public class Kayttaja {
 
     private String kayttaja;
@@ -21,6 +28,11 @@ public class Kayttaja {
         this.lukija = new Lukija();
     }
 
+       /**
+ *
+ * Tämä metodi hoitaa tällä hetkellä kaiken oleellisen, eli kysyy salasanan, varmistaa
+ * että se on oikein ja hoitaa palautuksen
+ */
     public String kaynnisty() throws Exception {
 
         System.out.println("Hei " + this.kayttaja + "!");

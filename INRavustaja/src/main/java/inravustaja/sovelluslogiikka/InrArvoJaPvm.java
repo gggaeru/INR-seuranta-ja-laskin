@@ -9,6 +9,8 @@ package inravustaja.sovelluslogiikka;
 /**
  *
  * @author onnikone
+ * 
+ * Tämä luokka tallentaa niitä arvoja, joita tule seurantaan. Ei toimi vielä.
  */
 public class InrArvoJaPvm {
     

@@ -8,6 +8,7 @@ package inravustaja.inravustaja;
 
 import inravustaja.kayttoliittyma.GraafinenKayttoliittyma;
 import inravustaja.kayttoliittyma.TesktiKayttoliittyma;
+import javax.swing.SwingUtilities;
 
 /**
  *
@@ -15,12 +16,8 @@ import inravustaja.kayttoliittyma.TesktiKayttoliittyma;
  */
 public class Main {
      public static void main(String[] args) throws Exception {
-         
-         TesktiKayttoliittyma uusiohjelma = new TesktiKayttoliittyma();
-         uusiohjelma.kaynnista();
-         
-         GraafinenKayttoliittyma uusiliittyma = new GraafinenKayttoliittyma();
-         uusiliittyma.kaynnista();
+                 
+          SwingUtilities.invokeLater((Runnable) new GraafinenKayttoliittyma());
          
     }
    

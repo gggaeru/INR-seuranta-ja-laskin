@@ -5,47 +5,10 @@
  */
 package inravustaja.kayttoliittyma;
 
-import java.awt.Container;
-import java.awt.GridLayout;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-
 /**
  *
  * @author onnikone
  */
 public class GraafinenKayttoliittyma {
-    
-    Container sisallys;
-    
-    public GraafinenKayttoliittyma(){
-        
-    }
-    
-    public void kaynnista(){
-        luoKomponentit(sisallys);
-        
-    }
-    
-    private void luoKomponentit(Container container) {
-        GridLayout layout = new GridLayout(3, 2);
-        container.setLayout(layout);
-
-        JLabel nimiTeksti = new JLabel("Nimi: ");
-        JTextField nimiKentta = new JTextField();
-        JLabel hetuTeksti = new JLabel("Hetu: ");
-        JTextField hetuKentta = new JTextField();
-
-        JButton lisaaNappi = new JButton("Lisää henkilö!");
-        // tapahtumankuuntelija
-
-        container.add(nimiTeksti);
-        container.add(nimiKentta);
-        container.add(hetuTeksti);
-        container.add(hetuKentta);
-        container.add(new JLabel(""));
-        container.add(lisaaNappi);
-    }
     
 }

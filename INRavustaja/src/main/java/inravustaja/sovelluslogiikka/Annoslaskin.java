@@ -10,7 +10,7 @@ import java.text.NumberFormat;
 
 /**
  *
- * @author onnikone
+ * Tällä lasketaan kuinka monta tablettia seuraavalla viikolla yhteensä otetaan
  */
 public class Annoslaskin {
 
@@ -19,19 +19,25 @@ public class Annoslaskin {
     private double uusiviikko;
     private String muotoiltu;
 
-
     public Annoslaskin(double inr, double tabletit) {
         this.inr = inr;
         this.tabletit = tabletit;
-        this.uusiviikko=laskin();
+        this.uusiviikko = laskin();
     }
-    
-    public String muunnin(double d){
-        NumberFormat formatter = new DecimalFormat("#0.0"); 
+
+    /**
+     *
+     * pyöristää annoksen sopivaan desimaalimuotoon
+     */
+    public String muunnin(double d) {
+        NumberFormat formatter = new DecimalFormat("#0.0");
         return formatter.format(d);
     }
-    
 
+    /**
+     *
+     * hoitaa varsinaisen tablettien laskemisen
+     */
     public double laskin() {
 
         if (this.inr > 3.0 && this.inr < 3.3) {
@@ -52,14 +58,23 @@ public class Annoslaskin {
 
     }
 
+    /**
+ *
+ * hoitaa luokan toteutuksen ja palautuksen haluttussa muodossa
+ */
     public String tablettienJakoViikolle() {
         if (this.uusiviikko == 0) {
             return "INR- arvosi on liian kaukana tavoitearvoista.";
-        }       
-        this.muotoiltu = muunnin(this.tabletit);       
+        }
+        this.muotoiltu = muunnin(this.tabletit);
         return muotoiltu;
     }
 
+    /**
+ *
+ * Tähän olisi tarkoitus tehdä laskin, joka kertoo jokaiselle viikonpäivälle oikean tabletti
+ * määrän
+ */
     public String tablettienJakoPaiville() {
 
         return "";

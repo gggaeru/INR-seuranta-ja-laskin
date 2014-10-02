@@ -15,6 +15,9 @@ import java.util.logging.Logger;
 /**
  *
  * @author onnikone
+ * 
+ * 
+ * tämä luokka ohjaa tietojen tallennusta ja vanhojen tietojen esittämistä.
  */
 public class Seuranta {
 
@@ -28,6 +31,12 @@ public class Seuranta {
 
     }
 
+    
+       /**
+ *
+ * Metodi käyttää scanneria lukeakseen aiempia inr-arvoja ja niiden näytteenotto-
+ * päivämääriä, ja tämän jälkeen tulostaa ne näkyviin
+ */
     public String lueEdellisetTiedot(String mista) {
 
         try {
@@ -45,6 +54,11 @@ public class Seuranta {
 
     }
     
+    
+       /**
+ *
+ * Tämä metodi lisää tiedostoon annetun uuden päivämäärän ja inr-arvon
+ */
     public void lisaaArvo(String inr, String pvm, String mista){
         
         this.inr= inr;
