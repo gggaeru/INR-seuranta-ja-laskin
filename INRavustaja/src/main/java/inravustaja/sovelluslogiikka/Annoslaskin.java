@@ -11,6 +11,9 @@ import java.text.NumberFormat;
 /**
  *
  * Tällä lasketaan kuinka monta tablettia seuraavalla viikolla yhteensä otetaan
+ *
+ * @author onnikone
+ * @version $Id: $Id
  */
 public class Annoslaskin {
 
@@ -19,6 +22,12 @@ public class Annoslaskin {
     private double uusiviikko;
     private String muotoiltu;
 
+    /**
+     * <p>Constructor for Annoslaskin.</p>
+     *
+     * @param inr a double.
+     * @param tabletit a double.
+     */
     public Annoslaskin(double inr, double tabletit) {
         this.inr = inr;
         this.tabletit = tabletit;
@@ -28,6 +37,9 @@ public class Annoslaskin {
     /**
      *
      * pyöristää annoksen sopivaan desimaalimuotoon
+     *
+     * @param d a double.
+     * @return a {@link java.lang.String} object.
      */
     public String muunnin(double d) {
         NumberFormat formatter = new DecimalFormat("#0.0");
@@ -37,6 +49,8 @@ public class Annoslaskin {
     /**
      *
      * hoitaa varsinaisen tablettien laskemisen
+     *
+     * @return a double.
      */
     public double laskin() {
 
@@ -59,9 +73,11 @@ public class Annoslaskin {
     }
 
     /**
- *
- * hoitaa luokan toteutuksen ja palautuksen haluttussa muodossa
- */
+     *
+     * hoitaa luokan toteutuksen ja palautuksen haluttussa muodossa
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String tablettienJakoViikolle() {
         if (this.uusiviikko == 0) {
             return "INR- arvosi on liian kaukana tavoitearvoista.";
@@ -71,15 +87,22 @@ public class Annoslaskin {
     }
 
     /**
- *
- * Tähän olisi tarkoitus tehdä laskin, joka kertoo jokaiselle viikonpäivälle oikean tabletti
- * määrän
- */
+     *
+     * Tähän olisi tarkoitus tehdä laskin, joka kertoo jokaiselle viikonpäivälle oikean tabletti
+     * määrän
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String tablettienJakoPaiville() {
 
         return "";
     }
 
+    /**
+     * <p>toString.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String toString() {
         return "Uusi tablettimääräsi tälle viikolle on : " + tablettienJakoViikolle();
     }

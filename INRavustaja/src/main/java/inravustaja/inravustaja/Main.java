@@ -6,18 +6,27 @@
 
 package inravustaja.inravustaja;
 
-import inravustaja.kayttoliittyma.GraafinenKayttoliittyma;
-import inravustaja.kayttoliittyma.TesktiKayttoliittyma;
+import inravustaja.kayttoliittyma.TekstiKayttoliittyma;
 import javax.swing.SwingUtilities;
 
 /**
+ * <p>Main class.</p>
  *
  * @author onnikone
+ * @version $Id: $Id
  */
 public class Main {
+     /**
+      * <p>main.</p>
+      *
+      * @param args an array of {@link java.lang.String} objects.
+      * @throws java.lang.Exception if any.
+      */
      public static void main(String[] args) throws Exception {
                  
-          SwingUtilities.invokeLater((Runnable) new GraafinenKayttoliittyma());
+          TekstiKayttoliittyma uusiliittyma = new TekstiKayttoliittyma();
+          uusiliittyma.kaynnista();
+          
          
     }
    

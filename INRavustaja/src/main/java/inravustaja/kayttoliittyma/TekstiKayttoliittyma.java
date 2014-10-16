@@ -9,18 +9,28 @@ import inravustaja.sovelluslogiikka.*;
 import java.util.Date;
 
 /**
+ * <p>TekstiKayttoliittyma class.</p>
  *
  * @author onnikone
+ * @version $Id: $Id
  */
-public class TesktiKayttoliittyma {
+public class TekstiKayttoliittyma {
 
     Lukija lukija = new Lukija();
     Seuranta seuranta;
 
-    public TesktiKayttoliittyma() {
+    /**
+     * <p>Constructor for TekstiKayttoliittyma.</p>
+     */
+    public TekstiKayttoliittyma() {
 
     }
 
+    /**
+     * <p>kaynnista.</p>
+     *
+     * @throws java.lang.Exception if any.
+     */
     public void kaynnista() throws Exception {
 
         Kayttaja uusialku = new Kayttaja("Tatu", "porkkana");
@@ -54,6 +64,11 @@ public class TesktiKayttoliittyma {
 
     }
 
+    /**
+     * <p>uusiArvo.</p>
+     *
+     * @throws java.lang.Exception if any.
+     */
     public void uusiArvo() throws Exception {
 
 

@@ -6,20 +6,32 @@
 package inravustaja.sovelluslogiikka;
 
 /**
+ * <p>PvmLaskin class.</p>
  *
  * @author onnikone
- * 
+ *
  * tämä luokka laskee arvion seuraavasta päivämäärästä, jolloin verikokeeseen olisi
  * hyvä mennä
+ * @version $Id: $Id
  */
 public class PvmLaskin {
 
     private double inrarvo;
 
+    /**
+     * <p>Constructor for PvmLaskin.</p>
+     *
+     * @param inr a double.
+     */
     public PvmLaskin(double inr) {
         this.inrarvo = inr;
     }
 
+    /**
+     * <p>uusipaivamaara.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String uusipaivamaara() {
 
         if (inrarvo > 3.0 && inrarvo < 3.2 || inrarvo < 2.0 && inrarvo > 1.7) {
@@ -32,6 +44,11 @@ public class PvmLaskin {
         return "Ota yhteyttä lääkäriin uuden annostuksen ja näytteenottopäivän saamiseksi.";
     }
 
+    /**
+     * <p>toString.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String toString() {
         return uusipaivamaara();
 

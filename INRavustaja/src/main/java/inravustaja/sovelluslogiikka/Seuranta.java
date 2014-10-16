@@ -13,11 +13,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
+ * <p>Seuranta class.</p>
  *
  * @author onnikone
- * 
- * 
+ *
+ *
  * tämä luokka ohjaa tietojen tallennusta ja vanhojen tietojen esittämistä.
+ * @version $Id: $Id
  */
 public class Seuranta {
 
@@ -26,17 +28,26 @@ public class Seuranta {
     String inr;
     String pvm;
 
+    /**
+     * <p>Constructor for Seuranta.</p>
+     *
+     * @throws java.io.FileNotFoundException if any.
+     * @throws java.io.IOException if any.
+     */
     public Seuranta() throws FileNotFoundException, IOException {
         this.lukija = new Lukija();
 
     }
 
     
-       /**
- *
- * Metodi käyttää scanneria lukeakseen aiempia inr-arvoja ja niiden näytteenotto-
- * päivämääriä, ja tämän jälkeen tulostaa ne näkyviin
- */
+    /**
+     *
+     * Metodi käyttää scanneria lukeakseen aiempia inr-arvoja ja niiden näytteenotto-
+     * päivämääriä, ja tämän jälkeen tulostaa ne näkyviin
+     *
+     * @param mista a {@link java.lang.String} object.
+     * @return a {@link java.lang.String} object.
+     */
     public String lueEdellisetTiedot(String mista) {
 
         try {
@@ -55,10 +66,14 @@ public class Seuranta {
     }
     
     
-       /**
- *
- * Tämä metodi lisää tiedostoon annetun uuden päivämäärän ja inr-arvon
- */
+    /**
+     *
+     * Tämä metodi lisää tiedostoon annetun uuden päivämäärän ja inr-arvon
+     *
+     * @param inr a {@link java.lang.String} object.
+     * @param pvm a {@link java.lang.String} object.
+     * @param mista a {@link java.lang.String} object.
+     */
     public void lisaaArvo(String inr, String pvm, String mista){
         
         this.inr= inr;

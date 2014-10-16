@@ -1,0 +1,10 @@
+INR-avustaja käyttöohjeet
+Kun INR-avustaja käynnistyy, ohjelma kysyy ennalta tietämäsi salasanan.
+Kirjoita salasana ruutuun, niin pääset jatkamaan ohjelmaan.
+Hyväksytyn salasanan jälkeen ohjelma kysyy, mitä haluat seuraavaksi tehdä. 
+Seuraa annettuja ohjeita. Voit lakskea ohjelmalla uuden viikkoannoksen tai
+tarkistaa edellisen viikkoannoksen. 
+Sulje lopuksi ohjelma.
+ 
+
+
